@@ -13,7 +13,7 @@ def parse_args():
     parser.add_argument("-p", "--password", required = True)
     parser.add_argument("-m", "--modpack",  required = True)
     parser.add_argument("-j", "--java",  help="path to java binary(default: java)", default="java")
-    parser.add_argument("-M", "--memory", type=int, help="amount of memory given for minecraft(in megabytes, default: 4096)")
+    parser.add_argument("-M", "--memory", type=int, help="amount of memory given for minecraft(in megabytes, default: 4096)", default=4096)
 
     return parser.parse_args()
 
